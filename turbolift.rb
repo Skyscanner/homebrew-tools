@@ -5,23 +5,23 @@
 class Turbolift < Formula
   desc "Simple tool to help apply changes across many GitHub repositories simultaneously"
   homepage "https://github.com/Skyscanner/turbolift"
-  version "4.1.2"
+  version "4.1.3"
   license "Apache-2.0"
 
   depends_on "gh"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Skyscanner/turbolift/releases/download/4.1.2/turbolift_4.1.2_Darwin_x86_64.tar.gz"
-      sha256 "2dd99e8a8105dc3ba31f6d416bd6cbf6f03644bc62db51fc3de895413f7ddb29"
+      url "https://github.com/Skyscanner/turbolift/releases/download/4.1.3/turbolift_4.1.3_Darwin_x86_64.tar.gz"
+      sha256 "242447da9c77967b49bf2be892ba966d5942468a55bf3422961009b3db88f9e8"
 
       def install
         bin.install "turbolift"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Skyscanner/turbolift/releases/download/4.1.2/turbolift_4.1.2_Darwin_arm64.tar.gz"
-      sha256 "8643612f4a6af5ad1f9e193ba06886782004185353c0a8bb00a2b6b681a0a586"
+      url "https://github.com/Skyscanner/turbolift/releases/download/4.1.3/turbolift_4.1.3_Darwin_arm64.tar.gz"
+      sha256 "45aa620abb7c879beed2627db8273c77bf474d33108f3e70e5dee391b1677ef0"
 
       def install
         bin.install "turbolift"
@@ -31,15 +31,15 @@ class Turbolift < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Skyscanner/turbolift/releases/download/4.1.2/turbolift_4.1.2_Linux_x86_64.tar.gz"
-      sha256 "083e504d1d14a74dc07a08bedd29761a95f008506db3d87411d16a3c7c99cd95"
+      url "https://github.com/Skyscanner/turbolift/releases/download/4.1.3/turbolift_4.1.3_Linux_x86_64.tar.gz"
+      sha256 "48bbf6d6fa0eb6baeae9b588cc296eafdb710e84dcdaee8f8afb9d34841869a1"
       def install
         bin.install "turbolift"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Skyscanner/turbolift/releases/download/4.1.2/turbolift_4.1.2_Linux_arm64.tar.gz"
-      sha256 "5796a18641dc752f494c2a5d35d02f7f93f21cf194a69de249ee6ecd56a5a2d4"
+      url "https://github.com/Skyscanner/turbolift/releases/download/4.1.3/turbolift_4.1.3_Linux_arm64.tar.gz"
+      sha256 "d65e9a06feeb88bd33a9f79fc52651c3d66cd42ed6aa759e2cc7863ee205bea1"
       def install
         bin.install "turbolift"
       end
